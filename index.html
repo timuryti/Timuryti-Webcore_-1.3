@@ -7,35 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <figure>
-                <img src="./images/burger.png" alt="бургер-меню" style="width:40px">
-                <img src="./images/Group.png" alt="Лого компании"  style="width:40px">
-                <img src="./images/divider.png" alt="разделитель"  style="height:40px">
-                <img src="./images/repair.png" alt="Парметры"  style="width:40px">
-                <img src="./images/checkstatus.png" alt="Search" style="width:40px">
-            </figure>
+    
+    <header class = "header">
+        <nav class = "header_navigation">
+            <div class = "header_navigation_left_column">
+                <button class= "header_navigation_burger_menu_button primary_button"><img src="./images/burger-menu.svg" alt="Кнопка открытия меню"></button> 
+                <img class = "header_navigation_company_logo" src="./images/Logo company.svg" alt="Лого компании" >
+            </div>
+            <div class = "divider header_navigation_divider"></div>
+            <div class = "header_navigation_right_column">
+                <button class = "header_navigation_settings_button primary_button"><img src= "./images/settings.svg" alt="Параметры" ></button>
+                <button class = "header_navigation_search_button primary_button"><img src = "./images/Search.svg"  alt="Поиск"></button>
+            </div>
 
+            
         </nav>
     </header>
-
-<aside>
-    <img src = "./images/_MG_3223.png" alt="Лого" style="width:600px" >
-</aside>
-
-    <main>
-        <article>
-
-            <
-
-            <section>
-                <p> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонитировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера 
+    <main class = "main">
+        <article class = "main_article">
+            <h1 class = "main_article_head"> 
+                Услуги и сервисы
+            </h1>
+                <div class="main_menu_buttons">
+                    <ul> 
+                        <li><a  class="link" href="">Ремонтируемые бренды</a></li>
+                        <li><a  class="link" href="">Ремонтируемые устройства</a></li>
+                        <li><a  class="link" href="">Цены на услуги</a></li>
+                        <li><a  class="link" href="">Адреса сервисных центров</a></li>
+                        <li><a  class="link" href="">Специальные цены</a></li>
+                    </ul>
+                </div>
+            <section class = "section">
+                <p class = "section_paragraph"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонитировать свой ноутбук Dell с официальной гарантией производителя. 
                 </p>
+                    <div class="container">
+                        <input type="checkbox" id="toggle" class="toggle">
+                    <div class="content">
+                            <p class = "section_paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким. </p>
+                    </div>
+                        <label for="toggle" class="button">
+                            <span class="show-text">
+                                <span class="icon"> <img src = "./images/Read more.svg" alt ="Читать далее"></span>
+                                Читать далее
+                            </span>
+                            <span class="hide-text">
+                                <span class="icon"><img src = "images/icon_hide.svg" alt ="Скрыть"> </span>
+                                Скрыть
+                            </span>
+                        </label>
+                    </div>        
             </section>
-
+<aside>
+    <img class = "image_scale" src = "./images/_MG_3223-4.png" alt="Лого" >
+</aside>
         </article>
 
 
