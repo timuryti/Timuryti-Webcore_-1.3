@@ -1,99 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CPS — Услуги и сервисы </title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class = "header">
-        <nav class = "header_navigation">
-            <div class = "header_navigation_left">
+        <nav class = "header__navigation">
+            <div class = "header__navigation--left">
             <!-- бургер-меню -->
-        <div class = 'header_navigation_burgermenu primary_button'>
-            <input type ="checkbox" id="burger-menu" class="burger-menu" >       
-            <label for="burger-menu" class ="burger primary_button"><img class ="burger " src="./images/burger-menu.svg" alt="Бургер-меню"></label>
-                <ul class="menu-list">
-                            <li><a href="#" class="menu-item"><img src="./images/phone.svg"> Phone</a></li>
-                            <li><a href="#" class="menu-item"><img src="./images/message.svg"> Message</a></li>
-                            <li><a href="#" class="menu-item"><img src="./images/Profile.svg"> Profile</a></li>
+        <div class = "burger-menu primary-button">
+            <input type ="checkbox" id="burger-menu" class="burger-menu__input" >       
+            <label for="burger-menu" class ="burger-menu__label primary-button"><img class ="burger-menu__icon" src="./images/burger-menu.svg" alt="Бургер-меню"></label>
+                <ul class="burger-menu__list">
+                            <li><a href="#" class="burger-menu__item"><img src="./images/phone.svg"  alt="Телефон"> Phone</a></li>
+                            <li><a href="#" class="burger-menu__item"><img src="./images/message.svg"  alt="Сообщения"> Message</a></li>
+                            <li><a href="#" class="burger-menu__item"><img src="./images/Profile.svg"  alt="Профиль"> Profile</a></li>
                 </ul>   
         </div > 
         
-        <div class = "divider header_navigation_left_divider"></div>
+        <div class = "header__divider header__divider--left"></div>
             <!-- лого-компаний -->
-                    <div class = "header_navigation_company_logo"><img src="./images/Logo company.svg" alt="Лого компании" > </div>
+                    <div class = "header__logo"><img src="./images/Logo company.svg" alt="Лого компании" > </div>
             </div>
-           <!-- разделитель -->
-            <!-- <div class = "divider header_navigation_divider"></div> -->
 
             <!-- правая колонка - параметры и поиск -->
-            <div class = "header_navigation_right_column">
+            <div class = "header__navigation--right">
 
  <!-- Контейнер для версии планшета -->
-<div class="menu-icons">
+<div class="header__icons">
     <a href="#"><img src="./images/phone.svg" alt="Phone"></a>
     <a href="#"><img src="./images/message.svg" alt="Message"></a>
     <a href="#"><img src="./images/Profile.svg" alt="Profile"></a>
 </div>
 
-<div class = "divider header_navigation_right_divider"></div>
+<div class = "header__divider header__divider--right"></div>
 
-                <span class = "header_navigation_desktop-version"> Оставить заявку</span><button class = "primary_button"><img src= "./images/settings.svg" alt="Параметры" ></button>
-                <span class = "header_navigation_desktop-version"> Статус ремонта</span><button class = "primary_button"><img src = "./images/search.svg"  alt="Поиск"></button>
+                <span class = "header__navigation-text--desktop"> Оставить заявку</span><button class = "primary-button"><img src= "./images/settings.svg" alt="Параметры" ></button>
+                <span class = "header__navigation-text--desktop"> Статус ремонта</span><button class = "primary-button"><img src = "./images/search.svg"  alt="Поиск"></button>
             </div>   
         </nav>
     </header>
-    <main>
-        <article>
-            <div class ="inline main_article_highlight"></div>
+    <main class = "main">
+        <article class="article">
+            <div class ="article__head--inaline article__highlight"></div>
             <!-- Заголовок -->
-                <h1 class = "inline main_article_head"> Услуги и сервисы</h1>
-            </div>
+                <h1 class = "article__head--inaline article__head"> Услуги и сервисы</h1>
+
             <!-- горизонтальное меню -->
-                <div class="main_menu_buttons">
+                <div class="main-menu">
                     <ul> 
-                        <li><a  class="link" href="">Ремонтируемые бренды</a></li>
-                        <li><a  class="link" href="">Ремонтируемые устройства</a></li>
-                        <li><a  class="link" href="">Цены на услуги</a></li>
-                        <li><a  class="link" href="">Адреса сервисных центров</a></li>
-                        <li><a  class="link" href="">Специальные цены</a></li>
+                        <li><a  class="main-menu__item" href="">Ремонтируемые бренды</a></li>
+                        <li><a  class="main-menu__item" href="">Ремонтируемые устройства</a></li>
+                        <li><a  class="main-menu__item" href="">Цены на услуги</a></li>
+                        <li><a  class="main-menu__item" href="">Адреса сервисных центров</a></li>
+                        <li><a  class="main-menu__item" href="">Специальные цены</a></li>
                     </ul>
                 </div>
-                <div class = "main_menu_reviews"><p> Отзывы</p></div>
-    <div class="section_aside">
-        <section>
-                <div>
-                    <p class = "section_paragraph"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонитировать свой ноутбук Dell с официальной гарантией производителя. </p>
-                <div class="section_container">
-                        <input type="checkbox" id="toggle" class="section_morebutton">
-                    <div class="section_paragraph_content" id = "section_desktop">
-                        <p class = "section_paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class = "tablet_version">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span> </p>
+        <section class = "section">
+                <div class = "section__text">
+                    <p class = "section__paragraph"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонитировать свой ноутбук Dell с официальной гарантией производителя. </p>
+                <div class="section__container">
+                        <input type="checkbox" id="toggle" class="section__toggle">
+                    <div class="section__paragraph-content">
+                        <p class = "section__paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class = "section__paragraph--tablet">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span> </p>
                     </div>
-                        <label for="toggle" class="section_label_button">
+                        <label for="toggle" class="section__label">
                        
-                            <span class="section_show-text_button"> 
-                                <img  class = "section_show_icon" src = "./images/Read more.svg" alt ="Читать далее">
+                            <span class="section__show-button"> 
+                                <img src = "./images/Read more.svg" alt ="Читать далее">
                                 Читать далее
                             </span>
 
-                            <span class="section_hide-text_button">
-                                <img class = "section_hide_icon" src = "images/icon_hide.svg" alt ="Скрыть"> 
+                            <span class="section__hide-button">
+                                <img src = "images/icon_hide.svg" alt ="Скрыть"> 
                                 Скрыть
                             </span>
                         </label>
                     </div>  
                 </div>      
             </section>
-<aside>
-    <div>
-        <img class = "aside_image" src = "./images/_MG_3223-4.png" alt="Лого" >
+<aside class ="aside">
+    <div >
+        <img class = "aside__image" src = "./images/_MG_3223-4.png" width="100%" loading="lazy" alt="Лого" >
     </div>
 </aside>
         </article>
-    </div>
     </main>
 
 </body>
